@@ -10,16 +10,19 @@
 <body>
     <form action="">
         <input type="number" placeholder="numero 1" id="num1">
+        <input type="text" placeholder="operação" id="calculo">
         <input type="number" placeholder="numero 2" id="num2">
-        <button onclick="calcular()" type="submit">ordenar</button>
+        <button onclick="calcular()" type="submit">calcular</button>
     </form>
 
     <script>
         function calcular() {
             let numero1 = document.getElementById('num1').value;
+            let calcular = document.getElementById('calculo').value;
             let numero2 = document.getElementById('num2').value;
 
-            window.open(`resolucao3.php?num1=${numero1}&&num2=${numero2}`);
+
+            window.open(`resolucao4.php?num1=${numero1}&&calc=${calcular}&&num2=${numero2}`);
         }                                               
     </script>
 
