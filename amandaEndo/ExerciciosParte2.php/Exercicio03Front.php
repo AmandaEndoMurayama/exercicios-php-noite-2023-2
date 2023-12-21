@@ -24,6 +24,7 @@ se forem divisíveis verifique se cada número digitado é par ou ímpar e mostr
     
      let valor1 = document.querySelector('#valor1').value;
      let valor2 = document.querySelector('#valor2').value;
+     
 
      window.open(`Exercicio03Back.php?valor1=${valor1}&valor2=${valor2}`);
     }
